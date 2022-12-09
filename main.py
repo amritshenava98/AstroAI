@@ -1,16 +1,15 @@
 from flask import Flask
 from flask import render_template
-from flask import requests
+from flask import request
 import os 
 import numpy
-import 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return 'Welcome to AstroAI. I have no clue what I am doing.'
+    return render_template('home.html')
 
 
 app.run(host='0.0.0.0', port=81)
