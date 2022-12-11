@@ -82,6 +82,17 @@ python-versions = ">=3.7"
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
+name = "cohere"
+version = "2.9.1"
+description = "A Python library for the Cohere API"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+requests = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.5"
 description = "Cross-platform colored terminal text."
@@ -486,7 +497,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "6f476c2126917ce13bf69823dd4a189b80bfb69305c04d619ae86025eee1b94a"
+content-hash = "65e4507eb07205a3781fde75ba3666de73a5424529480581ec34429c51287647"
 
 [metadata.files]
 aiohttp = []
@@ -496,6 +507,7 @@ attrs = []
 certifi = []
 charset-normalizer = []
 click = []
+cohere = []
 colorama = []
 debugpy = []
 docstring-to-markdown = []
